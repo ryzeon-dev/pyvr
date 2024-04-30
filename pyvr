@@ -1,0 +1,6 @@
+#!/bin/bash 
+
+activatePath=$(find . | grep "/activate$")
+source $activatePath
+python3 $@
+deactivate
